@@ -1,17 +1,17 @@
 
 
-let ceangetext=document.getElementById('myH1');
+// let ceangetext=document.getElementById('myH1');
 
-function text(){
-    console.log("button clicked");
-ceangetext.innerText= "Hello World!";
-ceangetext.style.backgroundColor="red";
+// function text(){
+//     console.log("button clicked");
+// ceangetext.innerText= "Hello World!";
+// ceangetext.style.backgroundColor="red";
    
-    ceangetext.toggleAttribute("hidden");  //this will hide the element if it is visible, and show it if it
+//     ceangetext.toggleAttribute("hidden");  //this will hide the element if it is visible, and show it if it
    
     
     
-}
+// }
 
 
 // uper cod not need
