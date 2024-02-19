@@ -1,26 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- dasyui link -->
+  <!-- dasyui link -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-
+<script src="https://cdn.tailwindcss.com"></script>
 <html lang="en" data-theme="light">
 
 
 	<!---this is font awesome link --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+	<!-- flowbite link -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
    
     
-    <title>Document</title>
+
+    <title>Change h1 Text</title>
 </head>
-<body>
-    <h1 id="text" class="text-red-500">welcome</h1>
+<body class="text-center">
+    <!-- <h1 id="myH1">Welcome</h1> -->
+    <!-- Other content here -->
+
+<!-- <button onclick="text()"  class="btn my-10"> button </button> -->
+<!-- nav is start -->
+
+<nav class="  lg:w-[80%] m-auto">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>   
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+          >
+          <li><a class="hover:bg-green-400 hover:text-white">Home</a></li>
+          <li><a class="hover:bg-green-400 hover:text-white">About</a></li>
+          <li><a class="hover:bg-green-400 hover:text-white">Destination</a></li>
+          <li><a class="hover:bg-green-400 hover:text-white">Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl font-extrabold uppercase">E-cummers</a>
+      </div>
+      <div class="navbar-center hidden lg:flex font-medium">
+        <ul class="menu menu-horizontal px-1">
+            <li><a class="hover:bg-green-400 hover:text-white">Home</a></li>
+            <li><a class="hover:bg-green-400 hover:text-white">About</a></li>
+            <li><a class="hover:bg-green-400 hover:text-white">Destination</a></li>
+            <li><a class="hover:bg-green-400 hover:text-white">Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button id="btn0"
+          class="btn px-6 py-3 border bg-[#1DD1001A] hover:bg-green-400 hover:text-white border-fill flex justify-center items-center m-0 uppercase" 
+          >submit </button>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- nav is over -->
+
+
+
+<section class="w-full lg:min-w-4/5 p bg-green-400 m-auto lg:grid lg:grid-cols-3 my-10  md:grid-cols-2 lg:gap-10 md:gap-10 ">
+    <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn1" class="btn btn-primary">Buy Now card 1</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 2</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 3</button>
+          </div>
+        </div>
+      </div>
+       <!-- card 4 -->
+       <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn1" class="btn btn-primary">Buy Now card 4</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 5</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+    <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 6</button>
+          </div>
+        </div>
+      </div>
+</section>
+
+<h2 class="text-center uppercase text-3xl font-bold">this is another  section </h2>
+
+<section class="w-full lg:min-w-4/5 p bg-green-400 m-auto lg:grid lg:grid-cols-3 my-10 md:grid md:grid-cols-2 lg:gap-10 md:gap-10 ">
+    <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn1" class="btn btn-primary">Buy Now card 1</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 2</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 3</button>
+          </div>
+        </div>
+      </div>
+       <!-- card 4 -->
+       <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn1" class="btn btn-primary">Buy Now card 4</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+      <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 5</button>
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+    <div class="card w-96 bg-base-100 shadow-xl m-auto my-4">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body ">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button id="btn2"  class="btn btn-primary ">Buy Now card 6</button>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section>
+    <dialog
+    id="modal"
+      class="modal flex items-center w-full h-screen bg-[#ffffff9e]  mx-auto justify-center text-center"
+    >
+      <div class="modal-content w-4/5 lg:w-3/5 flex justify-center items-center flex-col bg-white rounded-lg p-2 lg:p-14 space-y-6">
+        <div><img src="./images/success.png" alt="" /></div>
+        <h2 class="text-prime font-extrabold text-2xl">Success</h2>
+        <p>
+          Thank you for Booking Our Bus Seats.<br />We are working hard to find
+          the best service and deals for you.
+        </p>
+        <p>Shortly you will find a confirmation in your email.</p>
+        <div class="w-full flex justify-center">
+          <button
+          onclick="modalHide()"
+            class="btn w-3/6 bg-green-600 p-3 rounded-full text-white font-bold my-6"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </dialog>
+</section>
     
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
