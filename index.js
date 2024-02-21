@@ -18,6 +18,37 @@
 
 
 
+let num  = 0;
+  
+  document.getElementById('result+').addEventListener('click',function(){
+    num +=1 ;
+    document.getElementById('display').innerText =num;
+  })
+
+  document.getElementById('result-').addEventListener('click',function(){
+    num -=1 ;
+    document.getElementById('display').innerText =num;
+
+    if(num < 0){
+      // alert('Negative number is not allowed');
+      
+      document.getElementById('display').innerText='0';
+      document.getElementById('display').style.backgroundColor="red";
+      
+    }
+    
+    
+  })
+
+  let reset =document.getElementById('reset').addEventListener('click',function(){
+    // num=0 ;
+    reset= location.reload(true);
+  })
+
+  document.getElementById('submit').addEventListener('click',function(){
+    alert('first choice your product');
+  })
+
 
 
 function modalHide() {
